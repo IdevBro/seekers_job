@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src: local("GeneralSans-Regular"),
+    url("./assets/font/GeneralSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Medium";
+  src: local("GeneralSans-Medium"),
+    url("./assets/font/GeneralSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("GeneralSans-Bold"),
+    url("./assets/font/GeneralSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Semibold";
+  src: local("GeneralSans-Semibold"),
+    url("./assets/font/GeneralSans-Semibold.ttf") format("truetype");
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,45 @@
+.text-brendBlue svg {
+  path {
+    fill: #636366;
+  }
+}
+.text-brendBlue svg {
+  path {
+    fill: #4864e1;
+  }
+}
+
+.text-titleBlack {
+  transition: all 0.4s linear;
+}
+
+.text-brendBlue {
+  position: relative;
+}
+
+.text-brendBlue::before {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-30%);
+  content: "";
+  height: 2px;
+  width: 70%;
+  background-color: #4864e1;
+  animation: line 0.4s linear;
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+@media (max-width: 639px) {
+  a::before {
+    display: none;
+  }
+}
